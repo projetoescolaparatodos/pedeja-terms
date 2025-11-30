@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #e63946; /* A vibrant red for PedeJá branding */
+    --secondary-color: #1d3557; /* Deep blue for headings */
+    --text-color: #333;
+    --background-color: #f8f9fa;
+    --white: #ffffff;
+    --light-gray: #e9ecef;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--white);
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.last-update {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+main {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: 30px;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+h3 {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.alert-box {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin: 20px 0;
+}
+
+.alert-box strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.alert-box p {
+    margin-bottom: 0;
+}
+
+.cross-list, .ban-list, .check-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cross-list li, .ban-list li, .check-list li {
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
